@@ -1,0 +1,6 @@
+#draw {
+    border: 1px solid black;
+    width: 100%;
+
+}
+
