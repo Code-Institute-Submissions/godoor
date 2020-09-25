@@ -2,58 +2,58 @@ window.addEventListener("load",
     function () {
 
         //Canvas details
-        var draw_width = 800;
-        var draw_height = 600;
+        var draw_width = 480;
+        var draw_height = 360;
         var isLive = true;
-        var currentLevel = 1;
+        var currentLevel = 0;
         var currentLife = 5;
         var colour = "#" + ((1 << 24) * Math.random() | 0).toString(16);
 
         //Canvas elements
         var robots = [{
-            x: 200,
+            x: 90,
             y: 100,
             speedY: 2,
-            w: 40,
-            h: 40
+            w: 30,
+            h: 30
         },
         {
-            x: 340,
+            x: 180,
             y: 0,
-            speedY: 2,
-            w: 40,
-            h: 40
+            speedY: 3,
+            w: 30,
+            h: 30
         },
         {
-            x: 480,
+            x: 275,
             y: 100,
             speedY: 3,
-            w: 40,
-            h: 40
+            w: 30,
+            h: 30
         },
         {
-            x: 630,
+            x: 370,
             y: 100,
-            speedY: -5,
-            w: 40,
-            h: 40
+            speedY: -2,
+            w: 30,
+            h: 30
         }
         ];
 
         var doggo = {
             x: 10,
-            y: 260,
+            y: 160,
             speedX: 2,
             isMoving: false,
-            w: 40,
-            h: 40
+            w: 30,
+            h: 30
         };
 
         var tree = {
-            x: 720,
-            y: 260,
-            w: 60,
-            h: 40
+            x: 430,
+            y: 160,
+            w: 40,
+            h: 30
         }
 
         var moveDoggo = function () {
@@ -82,7 +82,7 @@ window.addEventListener("load",
                 currentLife += 1;
                 doggo.speedX += 1;
                 doggo.x = 10;
-                doggo.y = 260;
+                doggo.y = 160;
                 doggo.isMoving = false;
                 for (var ab = 0; ab < robots
                     .length; ab++) {
@@ -119,7 +119,7 @@ window.addEventListener("load",
                         colour = "#" + ((1 << 24) * Math.random() | 0).toString(16);
                     }
                     doggo.x = 10;
-                    doggo.y = 260;
+                    doggo.y = 160;
                     doggo.isMoving = false;
                 }
                 element.y += element.speedY;
@@ -138,11 +138,11 @@ window.addEventListener("load",
         //Display the game on the canvas
         var draw = function () {
             ctx.clearRect(0, 0, draw_width, draw_height);
-            ctx.font = "15px Black Ops One";
+            ctx.font = "11px Black Ops One";
             ctx.fillStyle = "rgb(0,0,0)";
             ctx.fillText("Level : " + currentLevel, 10, 15);
             ctx.fillText("Life : " + currentLife, 10, 35);
-            ctx.fillText("Score : " + doggo.speedX, 10, 55);
+            ctx.fillText("Speed : " + doggo.speedX, 10, 55);
             ctx.fillStyle = colour;
             ctx.fillRect(doggo.x, doggo.y, doggo.w, doggo.h);
             ctx.fillStyle = "rgb(255,120,70)";
@@ -153,7 +153,7 @@ window.addEventListener("load",
             ctx.fillStyle = "rgb(1,107,29)";
             ctx.fillRect(tree.x, tree.y, tree.w, tree.h);
             ctx.fillStyle = "rgb(0,0,0)";
-            ctx.fillText("tree", tree.x + 9, tree.y + 25);
+            ctx.fillText("tree", tree.x + 7, tree.y + 25);
         };
 
         //'Animation' check'
