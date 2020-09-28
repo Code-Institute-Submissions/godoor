@@ -1,13 +1,23 @@
 h1 {
+    margin: 15px 0px 10px 25px;
     font-family: 'Black Ops One', cursive;
-    font-size: 25px;
-    
+    font-size: 25px;    
 }
 
+.btn-secondary {
+    margin-left: 140px
+}
+   
+
+
 canvas {
+    margin-left: 25px;
     background-color: #d5dbce;
     border: 1px solid black;
-    width: 100%;
+    border-radius: 5px 5px 5px 5px;
+    width: 480px;
+    height: 360px;
+    
 }
 
 * {

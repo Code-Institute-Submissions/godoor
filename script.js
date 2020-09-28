@@ -13,28 +13,28 @@ window.addEventListener("load",
         var robots = [{
             x: 90,
             y: 100,
-            speedY: 2,
+            speedY: 1,
             w: 30,
             h: 30
         },
         {
             x: 180,
             y: 0,
-            speedY: 3,
+            speedY: 1,
             w: 30,
             h: 30
         },
         {
             x: 275,
             y: 100,
-            speedY: 3,
+            speedY: 2,
             w: 30,
             h: 30
         },
         {
             x: 370,
-            y: 100,
-            speedY: -2,
+            y: 50,
+            speedY: 2,
             w: 30,
             h: 30
         }
@@ -49,7 +49,7 @@ window.addEventListener("load",
             h: 30
         };
 
-        var tree = {
+        var door = {
             x: 430,
             y: 160,
             w: 40,
@@ -76,7 +76,7 @@ window.addEventListener("load",
 
         //Game's rules
         var logic = function () {
-            if (checkCollision(doggo, tree)) {
+            if (checkCollision(doggo, door)) {
                 alert('Level Up');
                 currentLevel += 1;
                 currentLife += 1;
@@ -145,15 +145,15 @@ window.addEventListener("load",
             ctx.fillText("Speed : " + doggo.speedX, 10, 55);
             ctx.fillStyle = colour;
             ctx.fillRect(doggo.x, doggo.y, doggo.w, doggo.h);
-            ctx.fillStyle = "rgb(255,120,70)";
+            ctx.fillStyle = "rgb(191, 0, 0)";
             robots.forEach(function (element, index) {
                 ctx.fillRect(element.x, element.y, element.w, element.h);
             });
 
-            ctx.fillStyle = "rgb(1,107,29)";
-            ctx.fillRect(tree.x, tree.y, tree.w, tree.h);
+            ctx.fillStyle = "rgb(232, 175, 2)";
+            ctx.fillRect(door.x, door.y, door.w, door.h);
             ctx.fillStyle = "rgb(0,0,0)";
-            ctx.fillText("tree", tree.x + 7, tree.y + 25);
+            ctx.fillText("door", door.x + 7, door.y + 25);
         };
 
         //'Animation' check'
