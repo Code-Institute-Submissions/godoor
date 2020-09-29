@@ -6,7 +6,7 @@ window.addEventListener("load",
         var draw_height = 360;
         var isLive = true;
         var currentLevel = 0;
-        var currentLife = 5;
+        var currentLife = 3;
         var colour = "#" + ((1 << 24) * Math.random() | 0).toString(16);
 
         //Canvas elements
@@ -15,7 +15,7 @@ window.addEventListener("load",
             y: 100,
             speedY: 1,
             w: 30,
-            h: 30
+            h: 30            
         },
         {
             x: 180,
