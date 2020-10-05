@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>/get-to-the-door</title>
-
-	<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
-	<link rel="icon" href="/images/icon.png">
-	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-</head>
-<script>
-	$("document").ready( function () {
-        alert("Welcome to '/get-to-the-door' game. Your task is to get to the door without getting hit by the red dots. Move forward by clicking or holding the mouse button anywhere in the blue game square. Good luck!");
-    }); 
-</script>
-
-<body>
-	<h1 class="main">/get-to-the-door</h1>
-	<canvas id="draw" width="480" height="360"></canvas>
-</body>
-
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>/godoor</title>
+      <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+      <!-- JS Script -->
+      <script src="././assets/js/script.js"></script>
+      <!-- Bootstrap CDN -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="././assets/css/style.css">
+   </head>
+   <body>
+      <h1 class="main">/godoor</h1>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      how-to-play
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">/how-to-play</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  Welcome to <strong>/godoor</strong> game traveller! <br>
+                  You are the lonely looking square on the left side of the screen...and you really REALLY need to get to the <span style="color: #e8af02">door</span>! <br><br>
+                  There is just one problem. You see those <span style="color: #bf0000">red</span>, angry looking squares jumping up-and-down like crazy? You don't like them, they don't like you. Avoid them at all cost! <br><br>
+                  Move forward by clicking/holding the mouse button anywhere in the <span style="color: #0d6ae1">blue</span> square game area. Or touch the screen if you prefer mobile experience. Your call. <br><br>
+                  When you finally get to the <span style="color: #e8af02">door</span>, guess what? Level Up! You will be moving faster but the <span style="color: #bf0000">red</span> dudes will also get a kick! <br><br>
+                  Good luck and have fun!
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <canvas id="draw" width="480" height="360"></canvas>
+   </body>
 </html>

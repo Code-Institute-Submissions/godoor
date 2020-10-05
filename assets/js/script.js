@@ -1,3 +1,14 @@
+// Hello.
+//
+// This is JSHint, a tool that helps to detect errors and potential
+// problems in your JavaScript code.
+//
+// To start, simply enter some JavaScript anywhere on this page. Your
+// report will appear on the right side.
+//
+// Additionally, you can toggle specific options in the Configure
+// menu.
+
 window.addEventListener("load",
     function () {
 
@@ -7,7 +18,8 @@ window.addEventListener("load",
         var isLive = true;
         var currentLevel = 0;
         var currentLife = 3;
-        var colour = "#" + ((1 << 24) * Math.random() | 0).toString(16);
+        var colour = "#" + Math.floor(Math.random()*16777215).toString(16);
+        
 
         //Canvas elements
         var robots = [{
@@ -54,15 +66,15 @@ window.addEventListener("load",
             y: 160,
             w: 40,
             h: 30
-        }
+        };
 
         var moveDoggo = function () {
             doggo.isMoving = true;
-        }
+        };
 
         var stopDoggo = function () {
             doggo.isMoving = false;
-        }
+        };
 
         //Getting the canvas and context
         var canvas = document.getElementById("draw");
@@ -112,11 +124,11 @@ window.addEventListener("load",
                         currentLevel = 0;
                         currentLife = 6;
                         doggo.speedX = 2;
-                        colour = "#" + ((1 << 24) * Math.random() | 0).toString(16);
+                        colour = "#" + Math.floor(Math.random()*16777215).toString(16);
                     }
                     if (currentLife > 0) {
                         currentLife -= 1;
-                        colour = "#" + ((1 << 24) * Math.random() | 0).toString(16);
+                        colour = "#" + Math.floor(Math.random()*16777215).toString(16);
                     }
                     doggo.x = 10;
                     doggo.y = 160;
@@ -170,7 +182,6 @@ window.addEventListener("load",
             var closeOnWidth = Math.abs(rect1.x - rect2.x) <= Math.max(rect1.w, rect2.w);
             var closeOnHeight = Math.abs(rect1.y - rect2.y) <= Math.max(rect1.h, rect2.h);
             return closeOnWidth && closeOnHeight;
-        }
+        };
         step();
     });
-console.log(isLive);

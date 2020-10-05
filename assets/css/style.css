@@ -1,0 +1,61 @@
+* {
+	-webkit-user-select: none;
+}
+
+body {
+	background-image: url("../images/bg.jpg")
+}
+
+h1 {
+	margin: 15px 0px 10px 125px;
+	font-family: 'Black Ops One', cursive;
+	font-size: 30px;
+	color: #e8af02;
+}
+
+.btn-primary {
+	margin: 15px 0px 10px 125px;
+	color: #e8af02;
+	background-color: #007bff;
+	border-color: #007bff;
+	font-family: 'Black Ops One', cursive;
+	font-size: 15px;
+	font-weight: lighter;
+	display: inline-block;
+	float: left;
+}
+
+.modal-title {
+	font-family: 'Black Ops One', cursive;
+	font-size: 15px;
+}
+
+.modal-body {
+	font-family: 'Black Ops One', cursive;
+	font-size: 15px;
+}
+
+.btn-secondary {
+	font-family: 'Black Ops One', cursive;
+	font-size: 12px;
+}
+
+canvas {
+	margin-left: 125px;
+	margin-right: 25px;
+	background-color: #353638;
+	border: 2px solid #0d6ae1;
+	border-radius: 5px 5px 5px 5px;
+	width: 75%;
+	height: 75%;
+}
+
+#info {
+	display: inline-block;
+	float: right;
+	width: 200px;
+	margin: 10px;
+	text-align: right;
+	font-family: 'Black Ops One', cursive;
+	font-size: 12px;
+}
