@@ -104,9 +104,9 @@ window.addEventListener("load",
                         alert('Game Over');
                         for (var ab = 0; ab < robots.length; ab++) {
                             if (robots[ab].speedY > 1) {
-                                robots[ab].speedY -= (currentLevel - 1);
+                                robots[ab].speedY -= (currentLevel + 1);
                             } else {
-                                robots[ab].speedY += (currentLevel - 1);
+                                robots[ab].speedY += (currentLevel + 1);
                             }
                         }
                         currentLevel = 1;
@@ -153,7 +153,7 @@ window.addEventListener("load",
             ctx.fillStyle = "rgb(232, 175, 2)";
             ctx.fillRect(door.x, door.y, door.w, door.h);
             ctx.fillStyle = "rgb(0,0,0)";
-            ctx.fillText("door", door.x + 7, door.y + 25);
+            ctx.fillText("door", door.x + 5, door.y + 20);
         };
 
         //'Animation' check'
