@@ -101,7 +101,7 @@ window.addEventListener("load",
             robots.forEach(function (element) {
                 if (checkCollision(doggo, element)) {
                     if (currentLife === 0) {
-                        alert('Game Over');
+                        alert('Game Over. Your score is: '  + currentLevel);
                         for (var ab = 0; ab < robots.length; ab++) {
                             if (robots[ab].speedY > 1) {
                                 robots[ab].speedY -= (currentLevel + 1);
