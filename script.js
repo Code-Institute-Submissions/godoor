@@ -3,7 +3,7 @@ window.addEventListener("load",
 
         //Canvas details
         var draw_width = 480;
-        var draw_height = 360;
+        var draw_height = 360; 
         var isLive = true;
         var currentLevel = 0;
         var currentLife = 3;
@@ -98,7 +98,7 @@ window.addEventListener("load",
                 doggo.x = doggo.x + doggo.speedX;
             }
 
-            robots.forEach(function (element, index) {
+            robots.forEach(function (element) {
                 if (checkCollision(doggo, element)) {
                     if (currentLife === 0) {
                         alert('Game Over');
@@ -146,7 +146,7 @@ window.addEventListener("load",
             ctx.fillStyle = colour;
             ctx.fillRect(doggo.x, doggo.y, doggo.w, doggo.h);
             ctx.fillStyle = "rgb(191, 0, 0)";
-            robots.forEach(function (element, index) {
+            robots.forEach(function (element) {
                 ctx.fillRect(element.x, element.y, element.w, element.h);
             });
 
