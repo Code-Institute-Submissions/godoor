@@ -1,7 +1,7 @@
 # '/get-to-the-door' JavaScript game
 Interactive Frontend Development - Code Institute project
 
-It is browser game designed for testing user's rexlexes while keeping them entertained. The increase in speed after reaching the door provides with a steady challenge and keeps user hooked in. Lets see how fast their fingers really are!
+It is browser game designed for testing user's reflexes while keeping them entertained. The increase in speed after reaching the door provides with a steady challenge and keeps the user hooked in. Lets see how fast their fingers really are!
 
 ## UX
  
