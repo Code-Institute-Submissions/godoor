@@ -139,7 +139,7 @@ window.addEventListener("load",
         var draw = function () {
             ctx.clearRect(0, 0, draw_width, draw_height);
             ctx.font = "11px Black Ops One";
-            ctx.fillStyle = "rgb(0,0,0)";
+            ctx.fillStyle = "rgb(232, 175, 2)";
             ctx.fillText("Level : " + currentLevel, 10, 15);
             ctx.fillText("Life : " + currentLife, 10, 35);
             ctx.fillText("Speed : " + doggo.speedX, 10, 55);
@@ -152,7 +152,7 @@ window.addEventListener("load",
 
             ctx.fillStyle = "rgb(232, 175, 2)";
             ctx.fillRect(door.x, door.y, door.w, door.h);
-            ctx.fillStyle = "rgb(0,0,0)";
+            ctx.fillStyle = "rgb(11,88,193)";
             ctx.fillText("door", door.x + 5, door.y + 20);
         };
 
