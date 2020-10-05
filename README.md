@@ -68,6 +68,7 @@ This game is designed for anyone who doesn't wish to install anything on the PC/
 ## Testing
 
 JSHint Validator: https://github.com/geoeskel/milestone_project-2/blob/master/documentation/validators/JavaScript%20validator.PNG
+
 W3C CSS Validator: https://github.com/geoeskel/milestone_project-2/blob/master/documentation/validators/CSS%20validator.PNG
 
 1. As a visitor, I wasn't to easily understand the main purpose of the game and navigate without using external documentation/help.
