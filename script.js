@@ -13,28 +13,28 @@ window.addEventListener("load",
         var robots = [{
             x: 90,
             y: 100,
-            speedY: 3,
+            speedY: 4,
             w: 30,
             h: 30
         },
         {
             x: 180,
             y: 0,
-            speedY: 2,
+            speedY: 3,
             w: 30,
             h: 30
         },
         {
             x: 275,
             y: 100,
-            speedY: 3,
+            speedY: 4,
             w: 30,
             h: 30
         },
         {
             x: 370,
             y: 50,
-            speedY: 2,
+            speedY: 3,
             w: 30,
             h: 30
         }
@@ -43,7 +43,7 @@ window.addEventListener("load",
         var doggo = {
             x: 10,
             y: 160,
-            speedX: 2,
+            speedX: 3,
             isMoving: false,
             w: 30,
             h: 30
@@ -109,7 +109,7 @@ window.addEventListener("load",
                                 robots[ab].speedY += (currentLevel + 1);
                             }
                         }
-                        currentLevel = 1;
+                        currentLevel = 0;
                         currentLife = 6;
                         doggo.speedX = 2;
                         colour = "#" + ((1 << 24) * Math.random() | 0).toString(16);
