@@ -34,6 +34,7 @@ This game is designed to anyone who doesn't wish to install anything on the PC/p
 2. CSS 
 3. JavaScript
 4. Google fonts (https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap)
+5. Google Ajax CDN (https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js)
 
 ## Testing
 
