@@ -1,11 +1,19 @@
 # '/get-to-the-door' JavaScript game
 Interactive Frontend Development - Code Institute project
 
-This is a simply browser JavaScript game. It is reflex game designed for the user to have fun.
+It is browser game designed for testing user's rexlexes while keeping them entertained. The increase in speed after reaching the door provides with a steady challenge and keeps user hooked in. Lets see how fast their fingers really are!
 
 ## UX
  
 This game is designed to anyone who doesn't wish to install anything on the PC/phone, just to have a quick relax (I use it in public transportation). There is plenty of room for future updates.
+
+## User stories
+- As a player, I like the fact that I don't have to install anything to play.
+- As a player, I would like 'my' square to move backwards and vertically.
+- As a player, I would like the screen to fit my phone better.
+- As a player, I like the speed increase 
+- As a developer, I want to block the user's ability to 'break' the game
+- As a developer, I want to add 'Subscribe' area so I can keep my players informed of any new features and updates
 
 ## Wireframes
 
@@ -18,7 +26,10 @@ This game is designed to anyone who doesn't wish to install anything on the PC/p
 
 1. Interactive canvas with the game
 2. Alert button with instructions on page load
-3. No external code
+3. Alert box when reaching the door
+4. Lives counter
+5. Speed counter 
+6. No external code
 
 
 
