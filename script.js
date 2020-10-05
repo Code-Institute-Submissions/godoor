@@ -3,7 +3,7 @@ window.addEventListener("load",
 
         //Canvas details
         var draw_width = 480;
-        var draw_height = 360; 
+        var draw_height = 360;
         var isLive = true;
         var currentLevel = 0;
         var currentLife = 3;
@@ -13,21 +13,21 @@ window.addEventListener("load",
         var robots = [{
             x: 90,
             y: 100,
-            speedY: 1,
+            speedY: 3,
             w: 30,
-            h: 30            
+            h: 30
         },
         {
             x: 180,
             y: 0,
-            speedY: 1,
+            speedY: 2,
             w: 30,
             h: 30
         },
         {
             x: 275,
             y: 100,
-            speedY: 2,
+            speedY: 3,
             w: 30,
             h: 30
         },
@@ -60,7 +60,7 @@ window.addEventListener("load",
             doggo.isMoving = true;
         }
 
-        var stopdoggo = function () {
+        var stopDoggo = function () {
             doggo.isMoving = false;
         }
 
@@ -68,11 +68,11 @@ window.addEventListener("load",
         var canvas = document.getElementById("draw");
         var ctx = canvas.getContext("2d");
 
-        //Event listeners for Doggos
+        //Event listeners for Doggos move
         canvas.addEventListener('mousedown', moveDoggo);
-        canvas.addEventListener('mouseup', stopdoggo);
+        canvas.addEventListener('mouseup', stopDoggo);
         canvas.addEventListener('touchstart', moveDoggo);
-        canvas.addEventListener('touchend', stopdoggo);
+        canvas.addEventListener('touchend', stopDoggo);
 
         //Game's rules
         var logic = function () {
@@ -84,8 +84,7 @@ window.addEventListener("load",
                 doggo.x = 10;
                 doggo.y = 160;
                 doggo.isMoving = false;
-                for (var ab = 0; ab < robots
-                    .length; ab++) {
+                for (var ab = 0; ab < robots.length; ab++) {
                     if (robots[ab].speedY > 1) {
                         robots[ab].speedY += 1;
                     } else {
@@ -97,6 +96,7 @@ window.addEventListener("load",
             if (doggo.isMoving) {
                 doggo.x = doggo.x + doggo.speedX;
             }
+        
 
             robots.forEach(function (element) {
                 if (checkCollision(doggo, element)) {
@@ -111,7 +111,7 @@ window.addEventListener("load",
                         }
                         currentLevel = 1;
                         currentLife = 6;
-                        doggo.speedX = 1;
+                        doggo.speedX = 2;
                         colour = "#" + ((1 << 24) * Math.random() | 0).toString(16);
                     }
                     if (currentLife > 0) {
